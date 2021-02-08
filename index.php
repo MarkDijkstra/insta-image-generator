@@ -34,31 +34,33 @@ textarea{
 }
 .msg{
     text-align:left;
-    background-color:#eee;
-    margin: 60px 60px 0 60px;
+    margin: 15px 60px 0 60px;
     width:500px;
     padding:30px;
     float:left; 
+    clear:both;
+}
+.msg--warning{
+    background-color:#F4EF0B;
+    border:1px solid #B8AC47;
+}
+.msg--success{
+    background-color:#4FEC13;
+    border:1px solid #6EA55A;
 }
 </style>
 </head>
 <body>
-<div class="msg">
-<?php
+<?php include_once('generator.php'); ?>
 
-//1080x 1080
-?>
-</div>
-
-<form method="post" action="./generator.php" target="_blank" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
   <label for="author">author:</label>
   <input type="text" id="author" name="author" value="Nelson Mandela">
   <label for="msg">msg:</label>
-  <textarea id="msg" name="msg">
-  It always seems impossible until it's done.
+  <textarea id="msg" name="msg">It always seems impossible until it's done.
   </textarea> 
   <label for="bg">background:</label>
-  <input type="text" id="bg" name="bg" value="">
+  <input type="file" id="bg" name="bg" value="">
   <br><br>
   <input type="submit" value="Submit">
 
