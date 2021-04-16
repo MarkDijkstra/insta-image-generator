@@ -5,6 +5,7 @@
 <style>
 *{
     box-sizing: border-box;
+    font-family:arial;
 }
 form{
     width:500px;
@@ -51,19 +52,20 @@ textarea{
 </style>
 </head>
 <body>
-<?php include_once('generator.php'); ?>
 
-<form method="post" enctype="multipart/form-data">
-  <label for="author">author:</label>
-  <input type="text" id="author" name="author" value="Nelson Mandela">
-  <label for="msg">msg:</label>
-  <textarea id="msg" name="msg">It always seems impossible until it's done.
-  </textarea> 
-  <label for="bg">background:</label>
-  <input type="file" id="bg" name="bg" value="">
-  <br><br>
-  <input type="submit" value="Submit">
+    <?php include_once('generator.php'); ?>
 
-</form>
+    <form method="post" enctype="multipart/form-data">
+    <label for="author">author:</label>
+    <input type="text" id="author" name="author" value="Nelson">
+    <label for="msg">msg:</label>
+    <textarea id="msg" name="msg">However many blessings we expect from God, His infinite liberality will always exceed all our wishes and our thoughts.
+    </textarea> 
+    <label for="bg">background:</label>
+    <input type="file" id="bg" name="bg" value="">
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html

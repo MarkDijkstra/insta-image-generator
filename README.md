@@ -1,2 +1,4 @@
 # insta-image-generator
-Text to instagram image
+Text to image test snippet. 
+
+Not intended for production!
